@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Attractions - Discover Kuwait Tours</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+   <!-- Header -->
+ <header class="primary-header">
+  <div class="left-part">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWL5nLwCSYO85jmxaI-jurMQ8VW0sAaUp49w&s" alt="Logo" />
+    <div class="logo">
+      <h1>Discover <span>Kuwait</span> Tours</h1>
+    </div>
+  </div>
+  <div class="right-part">
+    <nav class="navbar active">
+      <ul>
+        <li><a  href="index.html" class="active">Home</a></li>
+        <li><a  href="attractions.html">Attractions</a></li>
+        <li><a  href="booking.html">Booking</a></li>
+        <li><a  href="index.html">Packages</a></li>
+        <li><a  href="index.html">Gallery</a></li>
+       <li><a href="login.html" class="login-btn"><i class="fa-solid fa-user"></i><p>Login</p></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="attraction">
+    <h2>Explore Top Attractions in Kuwait</h2>
+    <p>Select an attraction from the list to learn more about it:</p>
+
+    <label for="attraction-select"><strong>Choose an attraction:</strong></label>
+    <select id="attraction-select">
+      <option value="">-- Select --</option>
+      <option value="towers">Kuwait Towers</option>
+      <option value="mosque">Grand Mosque</option>
+      <option value="park">Al Shaheed Park</option>
+      <option value="souk">Souk Al-Mubarakiya</option>
+      <option value="tower">Liberation Tower</option>
+    </select>
+
+    <div id="attraction-display" class="attraction-display">
+      <h3 id="attraction-name"></h3>
+      <img id="attraction-image" src="" alt="">
+      <p id="attraction-description"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Discover Kuwait Tours. All rights reserved.</p>
+  </footer>
+
+
+  <script src="Js/main.js"></script>
+</body>
+</html>
