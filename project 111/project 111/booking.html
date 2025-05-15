@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Tour - Discover Kuwait Tours</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <!-- Header -->
+ <header class="primary-header">
+  <div class="left-part">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWL5nLwCSYO85jmxaI-jurMQ8VW0sAaUp49w&s" alt="Logo" />
+    <div class="logo">
+      <h1>Discover <span>Kuwait</span> Tours</h1>
+    </div>
+  </div>
+  <div class="right-part">
+    <nav class="navbar active">
+      <ul>
+        <li><a  href="index.html" class="active">Home</a></li>
+        <li><a  href="attractions.html">Attractions</a></li>
+        <li><a  href="booking.html">Booking</a></li>
+        <li><a  href="index.html">Packages</a></li>
+        <li><a  href="index.html">Gallery</a></li>
+       <li><a href="login.html" class="login-btn"><i class="fa-solid fa-user"></i><p>Login</p></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="main-booking">
+
+    <div class="text">
+      <h2>Tour Booking Form</h2>
+    <p>Fill out the form below to reserve your spot on one of our amazing tours.</p>
+
+    </div>
+    <form class="bookingForm" id="bookingForm" onsubmit="return validateBookingForm();">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+965 5555 1234">
+
+      <label for="tourType">Tour Type:</label>
+      <select id="tourType" name="tourType" required>
+        <option value="">-- Select --</option>
+        <option value="city">City Highlights Tour</option>
+        <option value="desert">Desert Safari</option>
+        <option value="culture">Cultural Tour</option>
+      </select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="people">Number of People:</label>
+      <input type="number" id="people" name="people" min="1" max="50" required>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Discover Kuwait Tours. All rights reserved.</p>
+  </footer>
+
+  
+ 
+  <script src="Js/main.js"></script>
+</body>
+</html>
